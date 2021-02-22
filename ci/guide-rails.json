@@ -186,10 +186,15 @@
 					{
 						"name": "((application.name))",
 						"number_of_instances": 1,
+						"cloud_provider_type": "aws",
 						"cloud_provider_name": "guide-rails-gcp-us-east1",
+						"vm_type": "default",
 						"os_type": "default",
 						"networks": [
 							"isolation"
+						],
+						"availability_zones": [
+							"default"
 						],
 						"deployment_strategy": {
 							"serial": true
@@ -216,7 +221,8 @@
 						"HealthCheckPort": "",
 						"UnhealthyThresholdCount": 0
 					}
-				}
+				},
+				"deployment_target": 1
 			},
 			{
 				"name": "Integration",
@@ -305,10 +311,15 @@
 					{
 						"name": "((application.name))",
 						"number_of_instances": 1,
+						"cloud_provider_type": "aws",
 						"cloud_provider_name": "guide-rails-gcp-us-east1",
+						"vm_type": "default",
 						"os_type": "default",
 						"networks": [
 							"integration"
+						],
+						"availability_zones": [
+							"default"
 						],
 						"deployment_strategy": {
 							"canary_watch_time": "30000-120000",
@@ -346,7 +357,8 @@
 						"HealthCheckPort": "",
 						"UnhealthyThresholdCount": 0
 					}
-				}
+				},
+				"deployment_target": 1
 			},
 			{
 				"name": "Production",
@@ -407,10 +419,15 @@
 					{
 						"name": "((application.name))",
 						"number_of_instances": 1,
+						"cloud_provider_type": "aws",
 						"cloud_provider_name": "guide-rails-gcp-us-east1",
+						"vm_type": "default",
 						"os_type": "default",
 						"networks": [
 							"production"
+						],
+						"availability_zones": [
+							"default"
 						],
 						"deployment_strategy": {},
 						"dependencies": []
@@ -430,7 +447,8 @@
 						"HealthCheckPort": "",
 						"UnhealthyThresholdCount": 0
 					}
-				}
+				},
+				"deployment_target": 1
 			}
 		],
 		"exit_actions": {
