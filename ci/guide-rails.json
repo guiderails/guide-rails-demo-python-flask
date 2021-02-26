@@ -186,7 +186,7 @@
 					{
 						"name": "((application.name))",
 						"number_of_instances": 1,
-						"cloud_provider_type": "aws",
+						"cloud_provider_type": "vsphere",
 						"cloud_provider_name": "guide-rails-gcp-us-east1",
 						"vm_type": "default",
 						"os_type": "default",
@@ -311,7 +311,7 @@
 					{
 						"name": "((application.name))",
 						"number_of_instances": 1,
-						"cloud_provider_type": "aws",
+						"cloud_provider_type": "vsphere",
 						"cloud_provider_name": "guide-rails-gcp-us-east1",
 						"vm_type": "default",
 						"os_type": "default",
@@ -419,7 +419,7 @@
 					{
 						"name": "((application.name))",
 						"number_of_instances": 1,
-						"cloud_provider_type": "aws",
+						"cloud_provider_type": "vsphere",
 						"cloud_provider_name": "guide-rails-gcp-us-east1",
 						"vm_type": "default",
 						"os_type": "default",
