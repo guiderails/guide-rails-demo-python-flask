@@ -257,7 +257,7 @@
 					{
 						"name": "Integration test",
 						"definition": "Integration test",
-						"command": "export PATH=$PATH:/home/vcap/.local/bin\nexport PYTHONPATH=/home/vcap/.local/lib/python3.5/site-packages/\n\nsleep 30\n\nwget https://bootstrap.pypa.io/get-pip.py\npython3 get-pip.py --user\nexport PATH=$PATH:~/.local/bin\n\npip install --upgrade pip\npip install pytest\n\npytest --junit-xml=${TEST_REPORTS_DIR}/test.xml --cov-report=xml:${TEST_REPORTS_DIR}/coverage.xml --cov=${PKG_BASE_DIR}/buzzworthy_python/ ${APPLICATION_JOB_DIR}/bin/selenium-test.py",
+						"command": "export PATH=$PATH:/home/vcap/.local/bin\nexport PYTHONPATH=/home/vcap/.local/lib/python3.5/site-packages/\n\nsleep 30\n\nwget https://bootstrap.pypa.io/get-pip.py\npython3 get-pip.py --user\nexport PATH=$PATH:~/.local/bin\n\npip install --upgrade pip\npip install - r ${PKG_BASE_DIR}/${APPLICATION_NAME}/requirements.txt\n\npytest --junit-xml=${TEST_REPORTS_DIR}/test.xml --cov-report=xml:${TEST_REPORTS_DIR}/coverage.xml --cov=${PKG_BASE_DIR}/buzzworthy_python/ ${APPLICATION_JOB_DIR}/bin/selenium-test.py",
 						"properties": null
 					}
 				],
