@@ -44,7 +44,7 @@ echo "Where is Python?"
 which python3
 
 echo "Installing pip3"
-wget https://bootstrap.pypa.io/3.5/get-pip.py
+wget https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
 export PATH=$PATH:~/.local/bin
 
